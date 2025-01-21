@@ -1,0 +1,22 @@
+﻿@using Domain.Models
+@model LoginModel
+<div class="wrapper">
+    <div class="text-center mt-4 name">
+       Hello
+
+    </div>
+    <form asp-action="Login" asp-controller="Account" method="post" class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input asp-for=Login type="text"  id="userName" placeholder="Username">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input asp-for=Password type="password"  id="pwd" placeholder="Password">
+        </div>
+        <button type="submit" class="btn mt-3">Login</button>
+    </form>
+    <div class="text-center fs-6">
+        <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+    </div>
+</div>
